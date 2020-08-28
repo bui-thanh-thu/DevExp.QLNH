@@ -44,12 +44,12 @@ namespace DevExp.QLNH.Properties
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                //tableName = new Button();
-                //tableName.Text = dr["TableName"].ToString();
-                //tableName.Width = 100;
-                //tableName.Height = 100;
-                //tableName.BackColor = Color.FromArgb(255, 0, 0);
-                //flpNonEmpty.Controls.Add(tableName);
+                tableName = new Button();
+                tableName.Text = dr["TableName"].ToString();
+                tableName.Width = 100;
+                tableName.Height = 100;
+                tableName.BackColor = Color.FromArgb(255, 0, 0);
+                flpNonEmpty.Controls.Add(tableName);
             }
 
         }
